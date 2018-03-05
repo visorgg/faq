@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<title>Visor.gg FAQ</title>
+</head>
+<body>
+<header>
+	<div class="cd-intro-outer">
+		<div class="cd-intro-inner">
+			<h1>Visor.gg Alpha FAQ</h1>
+			<div class="cd-intro">
+				Welcome to the Visor FAQ. As a reminder, Visor is still in Alpha. We are still in the process of developing and improving Visor every single day! When using Visor, you will encounter bugs, inaccuracies, and occasionally things that may be wrong. We understand this, and hope you will work with us to continuously improve Visor for the entire community through your feedback.
+			</div>
+		</div>
+	</div>
+</header>
+<section class="cd-faq">
+	<ul class="cd-faq-categories">
+		<li><a class="selected" href="#analysis">Insights and Analysis</a></li>
+		<li><a href="#recording">Video Recording</a></li>
+		<li><a href="#processing">Video Processing</a></li>
+		<li><a href="#company">Company</a></li>
+
+	</ul> <!-- cd-faq-categories -->
+
+	<div class="cd-faq-items">
+		<ul id="analysis" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Insights and Analytics</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">
+					My Visor insights show 0 or N/A for everything or a hero doesn’t show up, what happened?
+				</a>
+				<div class="cd-faq-content">
+					<p>There are four main reasons that a video will not show any data after processing.</p>
+					<ul>
+						<li>
+							The video you uploaded is not in the recommended format. You can review those recommendations here: <a href="https://docsend.com/view/i6jyxgt">https://docsend.com/view/i6jyxgt</a>
+						</li>
+						<li>
+							Try to turn off your overlays if they are blocking critical areas on the screen: hero portrait, kill feed, ult charge, ammunition, skills, comms, game progress
+						</li>
+						<li>
+							Your video actually isn’t in 16:9. Even if you play in 16:9 and record in 16:9, your recorded video could be zooming into (<a href="https://imgur.com/JqTefdk">https://imgur.com/JqTefdk</a>), zooming out of (<a href="https://imgur.com/UZSJcH8">https://imgur.com/UZSJcH8</a>), or squishing your video. Your video must be at the right aspect ratio without any manipulation of the video itself with the video taking up the full screen.
+						</li>
+						<li>
+							You didn’t press tab and check the score screen many times throughout the game.
+						</li>
+					</ul>
+					<p>
+						If you checked and passed all three of the above points, then please email us at <a mailto="support@visor.gg">support@visor.gg</a> with your match link and Visor username, or find us on <a href="www.discord.me/visor">Discord</a> and @Visor Squad. We’ll get your match fixed up ASAP.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Some of my data is slightly incorrect or there are occasional inaccuracies/bugs, what happened?</a>
+				<div class="cd-faq-content">
+					<p>There are three main reasons that a video will show small errors or inaccuracies:</p>
+					<ul>
+						<li>
+							The video you uploaded is not in the recommended format. You can review those recommendations here: https://docsend.com/view/i6jyxgt
+						</li>
+						<li>
+							You didn’t press tab at all, or pressed tab very infrequently throughout your game.
+						</li>
+						<li>
+							Visor’s computer vision or post processing algorithms run into issues picking up certain moments in the game (For example, when 10 ults are going off and it’s chaotic, we may lose the ult charge number, or miss a kill/death in the feed). Even at 99.9% accuracy, we gather over 150,000 data points which means that we’ll still run into inaccuracy on 150 data points. If those data points happen to be your ult number or a kill feed point, then those will be more obvious!
+						</li>
+					</ul>
+					<p>
+						Feel free to email us at <a mailto="support@visor.gg">support@visor.gg</a> with your match link and Visor username, or find us on <a href="www.discord.me/visor">Discord</a> and @Visor Squad. We keep a long catalogue of these bugs so we can tackle them one at a time! Usually for small errors, we won’t be able to dive in and fix it right away, but we always note the error. We re-run every bugged video once we push out new updates to our computer vision or insight algorithms, so your video will be included in the re-run and the data should be fixed!
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">I’m on console (Xbox, Playstation) and my stats seem bugged or missing, what do I do?</a>
+				<div class="cd-faq-content">
+					<p>Right now we are running into a bit of an issue with visualizing console data. We already have a hot fix coming in the next few days, so you can keep uploading videos and we are going to re-run all console gameplay when it's live so console game data will be fixed. </p>
+					<br />
+					<p>For now, it’s very likely that if you’re uploading console games, you will see errors in your game data.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Visor is wrong, it said my (Impact, Ult, Teamplay) score was low, but I think I did really well. What gives?</a>
+				<div class="cd-faq-content">
+					<p>In these cases, Visor isn’t telling you that you did right or wrong. Visor is taking your data and running comparisons across hundreds of millions of other gameplay events across thousands of gamers to provide baseline ranges and guidance on how to interpret your numbers.
+					</p>
+					<br />
+					<p>
+						For example if you feel like you did well in using your ultimates, but Visor says you held it for too long, it may be that in general you should try to use your ult quicker, but in that specific game you made the right plays. However, if you continue to hold your ult for a very long time in every game, you’re more likely to play poorly then play well!
+					</p>
+					<br />
+					<p>
+						This is what Visor is good at, it is good at finding trends over the long run and trends within a game. But it won’t immediately tell you if those trends are indicative of “good” or “bad” play. As you use Visor more, you’ll be able to intuitively sense how Visor thinks, and Visor will be able to improve its own analysis of your gameplay style.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">My Tips and individual insights don’t seem to make sense. For example, why is it telling me to do more damage as Mercy?</a>
+				<div class="cd-faq-content">
+					<p>We have several hero-specific features launching soon! This includes skill cooldown management, effective skill usage, and skill timings. Along with this update, we will be retailoring the Tips system to be hero specific.
+					</p>
+					<br />
+					<p>
+						Currently, the tips are generalized because we have a wide range of players (from bronze all the way to the top 100 players in the world). The tips and recommendations system currently doesn’t take into account the hero you play because we haven’t launched enough hero specific insights yet. That is why you will occasionally see tips recommending you do more damage as Mercy! However, we know you’re smart enough to ignore those tips for now 
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Why isn’t Visor telling me how to get better? It’s just giving me all these stats.</a>
+				<div class="cd-faq-content">
+					<p>Visor isn’t built to tell you how to get better right off the bat. As a reminder, we are still in Alpha and are in the testing and improvement stage of our product. Our goal currently is to continuously improve our computer vision and algorithms so we can find useful and quick insights into your match and overall gameplay style. We must first accomplish this goal before we can provide exact improvement recommendations or practice suggestions.
+					</p>
+					<br />
+					<p>
+						For example if you feel like you did well in using your ultimates, but Visor says you held it for too long, it may be that in general you should try to use your ult quicker, but in that specific game you made the right plays. However, if you continue to hold your ult for a very long time in every game, you’re more likely to play poorly then play well!
+					</p>
+					<br />
+					<p>
+						However, our data in and of itself is extremely personalized and custom already. Each data point and insight is already tailored to your playstyle and your matches. As you continue to use Visor, the data and insights will continue to improve in accuracy and usefulness!
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">I don’t think Visor is useful because it didn’t catch that one critical moment that changed the entire match. What gives?</a>
+				<div class="cd-faq-content">
+					<p>We hear this a lot and we completely agree! Visor won’t be able to capture contextual moments or pick up situational events quite yet. For example, if there is a key Widow vs. Widow duel outcome, or a key ultimate that gets countered, Visor won’t be able to tell you those specifics.
+					</p>
+					<br />
+					<p>
+						The goal behind building Visor is different from anything you've probably tried before. Our goal is never to try and tell you exactly why you won or lost, or to give you advice on if you're playing right or wrong. Overwatch is too situational to do that just with numbers. In fact, even humans fail to catch many mistakes in a game.
+					</p>
+					<br />
+					<p>
+						Visor’s goal is to provide complex data in a very insightful and useful interface so you can easily identify strengths and weaknesses. Occasionally you will see something that you know is important and say, "That's not right, I remember that situation, Visor is wrong, or Visor missed something" and that's exactly what we would expect. There are consistently going to be exceptions in our analytics, but the point of using Visor is to provide a very accurate and comprehensive baseline to understand your gameplay and improve on a per match basis and over the long term.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="recording" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Video Recording</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I use any recording client? Do I have to use OBS?</a>
+				<div class="cd-faq-content">
+					<p>
+						Yes! You can use any recording client. We always recommend OBS because it is lightweight and high performant, but any recording software is fine as long as it follows the
+						<a href="https://docsend.com/view/i6jyxgt">recommended recording guideline</a>.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the recommended recording settings?</a>
+				<div class="cd-faq-content">
+					<p>Check out the <a href="https://docsend.com/view/i6jyxgt">recommended recording guideline</a>.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">If my recording quality isn’t very good, will Visor still work?</a>
+				<div class="cd-faq-content">
+					<p>Yes! We have had videos at 480p and 15fps work fine. There is a chance that Visor won’t be able to pick up some data points when the video quality is too poor, but as long as you are close to the recommended guidelines, you should be good to go.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Do I have to record each individual match or can I record one long VOD with multiple matches?</a>
+				<div class="cd-faq-content">
+					<p>You don't need to separate or splice your matches! If you upload one long VOD with several matches inside, Visor can auto detect each match and splice them for you. Then run analysis on each match which shows up individually on your dashboard.</p>
+					<br />
+					<p>
+						The downside to this is that since it is a long video with a larger file size, it takes Visor longer to process (parsing through, cutting, analyzing). If you upload piece-wise, one match at a time, Visor will process in parallel and much faster!
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Is there a difference between first person insights and spectator mode/custom game insights?</a>
+				<div class="cd-faq-content">
+					<p>Yes! First person gives you personalized data on your individual impact, ultimate management, and teamplay.
+						<a href="https://visor.gg/visor/matches/7be474386b">Here is an example</a>.
+					</p>
+					<br />
+					<p>Team game insights (scrim view) gives you analytics on team fights and your team/individual dynamics.
+						<a href="https://visor.gg/visor/matches/gblclv2ix3">Here is an example</a>.
+					</p>
+					<br />
+					<p>The interface is different and the stats recorded are different. You can read more details on our
+						<a href="https://www.reddit.com/r/OverwatchUniversity/comments/816m1q/weve_built_the_most_powerful_overwatch_analytics">recent Reddit post
+						</a>
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="processing" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Uploading and Processing</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">What are the recording requirements for Visor?</a>
+				<div class="cd-faq-content">
+					<p>There are three main reasons that a video will show small errors or inaccuracies:</p>
+					<ul>
+						<li>
+							Can be Comp, Scrim, or QP. First person POV, English only (For now! We’ll be supporting other languages soon)
+						</li>
+						<li>
+							Minimum recording of gameplay at 16:9 aspect ratio, 720p, 30 FPS. MP4 preferred (required for video playback).
+						</li>
+						<li>
+							Please don’t alt+tab during a game, stay on the game screen if you’re screen recording. If you’re recording the app, that would be the best because then you can alt+tab all you want! :)
+						</li>
+						<li>
+							Recommended recording software is OBS: https://obsproject.com/ Super lightweight, high performance video/audio capture with customizable and easy to use settings.
+						</li>
+						<li>
+							Make sure to record from the match start (start screen) all the way to the SR change screen at the end of a match if you can. If not, it’s not an issue! Visor will still work normally but may miss a couple minor things.
+						</li>
+					</ul>
+					<p>
+						Feel free to email us at <a mailto="support@visor.gg">support@visor.gg</a> with your match link and Visor username, or find us on <a href="www.discord.me/visor">Discord</a> and @Visor Squad. We keep a long catalogue of these bugs so we can tackle them one at a time! Usually for small errors, we won’t be able to dive in and fix it right away, but we always note the error. We re-run every bugged video once we push out new updates to our computer vision or insight algorithms, so your video will be included in the re-run and the data should be fixed!
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How long does Visor take to process my match?</a>
+				<div class="cd-faq-content">
+					<p>It depends on the video size/length! An average match (15-20min, 500mb file) usually will run in 1-1.5x the length of the match. So you can expect your match to be done in less than 30min.</p>
+					<br />
+					<p>However, we see people upload a 15min, 6gb file which will take a lot longer and is hard to estimate. Occasionally, people upload 8hr VODs and just leave Visor to run overnight as well!</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What languages do you support?</a>
+				<div class="cd-faq-content">
+					<p>
+						Visor currently supports English and Korean. We have support for several languages coming up including French, Spanish, Chinese, and Japanese.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Will 21:9, 16:10, (some resolution), be supported?</a>
+				<div class="cd-faq-content">
+					<p>Absolutely! We currently support a 16:9 aspect ratio but adjustments for future aspect ratios is in the works. As we open support for various aspect ratios, we will announce them in our <a href="www.discord.me/visor">Discord</a> and on our site.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What is the maximum VOD length or file size I can upload?</a>
+				<div class="cd-faq-content">
+					<p>There is no maximum length, and the maximum size is 100gb. However, we recommend against trying to reach any maximum. There is a direct correlation between your file size/video length and the amount of time it will take for Visor to analyze your gameplay. Our absolute recommended max limit is around 5-10gb per file and no longer than 2 hrs. If it’s longer, rest assured Visor will still process the video, but it will just take longer.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can I stream directly to Visor using OBS instead of recording and uploading?</a>
+				<div class="cd-faq-content">
+					<p>Being able to stream directly to Visor via any streaming software like OBS will be available very soonTM. ETA for this feature is by April 10, 2018. For now, the recommended method is to record your gameplay and upload!
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Is Visor backwards compatible on old videos?</a>
+				<div class="cd-faq-content">
+					<p>Visor is backwards compatible to a certain degree. Currently if you have a video where the kill feed shows up like this http://i.imgur.com/T32UGUC.png then Visor won’t be able to process because we lose a lot of detail on the actual events in game. Any videos after the most recent kill feed update should be good to go!
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">What about “x” feature?</a>
+				<div class="cd-faq-content">
+					<p>Our roadmap is pretty dense and we have a lot of awesome stuff coming! We currently don’t have a public roadmap, but we plan to have one in the future so you can vote on the features you’d like to see and request new features. For now, we love hearing about new features and awesome ideas for Visor through email at <a mailto="support@visor.gg">support@visor.gg</a> or in our <a href="www.discord.me/visor">Discord community</a>.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Can you help take a look at one of my matches? There seems to be something wrong!</a>
+				<div class="cd-faq-content">
+					<p>Absolutely! Because of our high volume, you should DM one of our team members in <a href="www.discord.me/visor">Discord</a> or email us at <a mailto="support@visor.gg">support@visor.gg</a> We will typically respond within 15min.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">My upload has been stuck at 0% for longer than a few minutes now, what is happening?</a>
+				<div class="cd-faq-content">
+					<p>When your upload is stuck at 0% for more than a few minutes, check to make sure your system clock is set to auto update. Due to security reasons, if your system clock is off, we do not accept the upload.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Do I have to upload each individual match or can I record one long VOD with multiple matches?</a>
+				<div class="cd-faq-content">
+					<p>You don't need to separate or splice your matches! If you upload one long VOD with several matches inside, Visor can auto detect each match and splice them for you. Then run analysis on each match which shows up individually on your dashboard.
+					</p>
+					<br />
+					<p>The downside to this is that since it is a long video with a larger file size, it takes Visor longer to process (parsing through, cutting, analyzing). If you upload piece-wise, one match at a time, Visor will process in parallel and much faster!
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="company" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Company</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How will you make money?</a>
+				<div class="cd-faq-content">
+					<p>
+						We'll be having a pro membership subscription to Visor, where you can get even more crazy features like automated weekly highlight reel, form squads on Visor with your teams, squad stats, automated team highlight reels, more advanced analytics, useless and mildly interesting stats (e.g. 80% of your Hanzo headshots happened when you have 20% hp), and faster queue times.
+					</p>
+					<p>
+						As heavy gamers who grew up with the budding SC/DotA 1 scene, we want to support eSports and competitive gaming as much as we can by making the free version of Visor as useful as we can to all your average gamers, so the pro version is definitely not going to be necessary but will enhance the experience a lot
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do I sign up?</a>
+				<div class="cd-faq-content">
+					<p>
+						We'll be having a pro membership subscription to Visor, where you can get even more crazy features like automated weekly highlight reel, form squads on Visor with your teams, squad stats, automated team highlight reels, more advanced analytics, useless and mildly interesting stats (e.g. 80% of your Hanzo headshots happened when you have 20% hp), and faster queue times.
+					</p>				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Is there a downloadable client?</a>
+				<div class="cd-faq-content">
+					<p>
+						We currently don’t have a downloadable client, but recommend every person use OBS to record if they do not have their own default recording software yet. We plan to build a client in the future so that you will have the option to choose how much video streaming and processing is handled locally as well as on our servers.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Is there a mobile app?</a>
+				<div class="cd-faq-content">
+					<p>
+						We currently don’t have a mobile app, but intend to build one in the future. Since we are still in Alpha, our goal is to nail down the experience first before committing resources to build across platforms.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How is Visor operating currently in terms of sustainable funding?</a>
+				<div class="cd-faq-content">
+					<p>
+						Our company is currently supported by several top investors with enough funding to operate independently, as well as expand the team going forward.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How many people are working on Visor?</a>
+				<div class="cd-faq-content">
+					<p>
+						We are a team of 5 working full-time to develop Visor. Our team is a combination of engineering, product, and design that has been building gaming products for years. If you’re interested in joining, feel free to send an intro with your resume, github, personal portfolio or any relevant material to
+						<a mailto="hello@visor.gg">hello@visor.gg</a>.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Are you hiring?</a>
+				<div class="cd-faq-content">
+					<p>
+						We are always looking for talented and passionate developers and designers!
+						You can submit your resume, github, personal portfolio or any relevant material to
+						<a mailto="hello@visor.gg">hello@visor.gg</a>
+						with a quick intro.
+					</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+	</div> <!-- cd-faq-items -->
+	<a href="#0" class="cd-close-panel">Close</a>
+</section> <!-- cd-faq -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
