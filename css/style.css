@@ -457,14 +457,13 @@ header h1 {
 .cd-faq-content ul {
   list-style: disc;
   color: #f1f1f1;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 .cd-faq-content li:last-child {
   margin-bottom: 16px;
 }
 .cd-faq-content p {
-  font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4;
   color: #f1f1f1;
